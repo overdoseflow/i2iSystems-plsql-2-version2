@@ -1,9 +1,9 @@
 SET SERVEROUTPUT ON;
 DECLARE
-d_name VARCHAR2(20):= 'Aysegul';
-d_university VARCHAR2(60);
+vs_name VARCHAR2(20):= 'Aysegul';
+vs_university VARCHAR2(60);
 BEGIN
-SELECT university INTO d_university FROM internship 
-WHERE name = d_name;
-DBMS_OUTPUT.PUT_LINE(d_university);
+SELECT university INTO vs_university FROM internship 
+WHERE name = vs_name;
+DBMS_OUTPUT.PUT_LINE(vs_university);
 END;
